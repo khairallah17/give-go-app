@@ -1,15 +1,16 @@
 import React from 'react'
-import { Text, View, StyleSheet, SafeAreaView } from "react-native"
+import { Text, View, SafeAreaView } from "react-native"
 import { LinearGradient } from 'expo-linear-gradient'
 import { Image } from 'expo-image'
 import { ImageBackground } from 'react-native'
 import ButtonNavigator from '../components/ButtonNavigator'
-import { EvilIcons } from '@expo/vector-icons'
+import { StatusBar } from 'expo-status-bar'
 
 const StartingPage = ({navigation}) => {
 
   return (
     <SafeAreaView>
+        <StatusBar style='dark'/>
         <LinearGradient
             colors={['#007F5F', '#2B9348']}
             className="h-full"
@@ -25,7 +26,7 @@ const StartingPage = ({navigation}) => {
             <Text className="text-white text-lg" >
                 Give & go helps you to bring what you want From The Netherlands
             </Text>
-            <ButtonNavigator navigation={navigation} to="login" classTheme="bg-white rounded-md p-2 items-center justify-center my-5" >
+            <ButtonNavigator navigation={navigation} routeName="Login" classTheme="bg-white rounded-md p-2 items-center justify-center my-5" >
                 <Text className="text-primary capitalize text-lg focus:text-white" >start delivering</Text>
             </ButtonNavigator>
         </View>

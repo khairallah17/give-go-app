@@ -10,10 +10,10 @@ export default function App() {
   return (
     <GlobalQuery>
         <NavigationContainer>
-          <Stack.Navigator>
-            <Stack.Screen name="Starting page" component={StartingPage} options={{headerShown: false}} />
-            <Stack.Screen name="login" component={Login} options={{headerShown: false}} />
-            <Stack.Screen name="Home" component={Home} options={{headerShown: false}} />
+          <Stack.Navigator screenOptions={{ headerShown: false }}>
+            <Stack.Screen name="Login" component={Login} /> 
+            <Stack.Screen name="Starting page" component={StartingPage} />
+            <Stack.Screen name="Home" component={Home} />
           </Stack.Navigator>
       </NavigationContainer>
     </GlobalQuery>

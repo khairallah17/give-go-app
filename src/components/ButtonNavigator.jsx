@@ -2,10 +2,11 @@ import React from 'react'
 import { Pressable } from 'react-native'
 
 
-const ButtonNavigator = ({ navigation, to, children, classTheme }) => {
+const ButtonNavigator = ({ navigation, routeName, children, classTheme }) => {
 
     const _onPress = () => {
-        navigation.navigate(to)
+      console.log(routeName)
+        navigation.navigate(routeName)
     }
 
   return (

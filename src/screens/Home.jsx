@@ -1,24 +1,22 @@
+import { withExpoSnack } from 'nativewind'
 import React from 'react'
 import { View, Text, Pressable } from 'react-native'
 
 const Home = ({ navigation }) => {
 
-  const _onPress = () => {
-    navigation.navigate("login")
-  }
-
   return (
     <View className="flex-1 items-center justify-center" >
-      <Text>
+      {/* <Text>
         Home
       </Text>
       <Pressable onPress={_onPress} >
         <Text>
           Login Page
         </Text>
-      </Pressable>
+      </Pressable> */}
+      hello
     </View>
   )
 }
 
-export default Home
+export default withExpoSnack(Home)
