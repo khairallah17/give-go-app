@@ -6,17 +6,11 @@ const Home = ({ navigation }) => {
 
   return (
     <View className="flex-1 items-center justify-center" >
-      {/* <Text>
+      <Text>
         Home
       </Text>
-      <Pressable onPress={_onPress} >
-        <Text>
-          Login Page
-        </Text>
-      </Pressable> */}
-      hello
     </View>
   )
 }
 
-export default withExpoSnack(Home)
+export default Home

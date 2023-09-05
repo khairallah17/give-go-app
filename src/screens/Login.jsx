@@ -2,13 +2,10 @@ import { useState } from 'react'
 import { StatusBar } from 'expo-status-bar'
 import { View, Text, TextInput, Pressable } from 'react-native'
 import ButtonNavigator from '../components/ButtonNavigator'
-import { withExpoSnack } from 'nativewind'
 import { Image } from 'expo-image'
 import { AntDesign } from '@expo/vector-icons';
 
 const Login = ({ navigation }) => {
-
-  console.log(navigation)
 
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
@@ -81,4 +78,4 @@ const Login = ({ navigation }) => {
   )
 }
 
-export default withExpoSnack(Login)
+export default Login
